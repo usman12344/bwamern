@@ -5,7 +5,7 @@ import ImageHero_ from 'assets/image/img-hero-frame.jpg';
 import IconCities from 'assets/image/icons/icon-cities.svg';
 import IconTraveler from 'assets/image/icons/icon-traveler.svg';
 import IconTreasure from 'assets/image/icons/icon-treasure.svg';
-
+import Fade from 'react-reveal/Fade';
 import numberFormat from 'utils/formatNumbering';
 
 
@@ -21,6 +21,7 @@ export default function Hero(props) {
 
 
   return (
+      <Fade bottom>
    <section className="container pt-4">
        <div className="row align-items-center">
             <div className="col-auto pr-5" style={{ width: 530 }}>
@@ -71,5 +72,6 @@ export default function Hero(props) {
 
        </div>
    </section>
+   </Fade>
    );
 }
