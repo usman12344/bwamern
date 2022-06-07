@@ -46,4 +46,4 @@ Star.propTypes = {
     width: propTypes.number,
     height: propTypes.number,
     spacing: propTypes.number
-} 
+}

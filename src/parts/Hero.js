@@ -19,6 +19,7 @@ export default function Hero(props) {
         });
     }
 
+    console.log(props.data);
 
   return (
       <Fade bottom>
@@ -41,23 +42,23 @@ export default function Hero(props) {
             <div className="row" style={{marginTop: 80}}>
                 <div className="col-auto" style={{marginRight:35}}>
                     <img widht="36" height="36"
-                    src={IconTraveler} alt={`${props.data.travelers} Travelers`} />
+                    src={IconTraveler} alt={`${props.data.traveler} Travelers`} />
                         <h6 className="mt-3">
-                            {numberFormat(props.data.travelers)}{" "} <span className="text-gray-500 font-weight-light">travelers</span>
+                            {numberFormat(props.data.traveler)}{" "} <span className="text-gray-500 font-weight-light">travelers</span>
                         </h6>
                 </div>
                 <div className="col-auto" style={{marginRight:35}}>
                     <img widht="36" height="36"
-                    src={IconTreasure} alt={`${props.data.treasures} Travelers`} />
+                    src={IconTreasure} alt={`${props.data.treasure} Travelers`} />
                         <h6 className="mt-3">
-                            {numberFormat(props.data.treasures)}{" "} <span className="text-gray-500 font-weight-light">treasures</span>
+                            {numberFormat(props.data.treasure)}{" "} <span className="text-gray-500 font-weight-light">treasures</span>
                         </h6>
                 </div>
                 <div className="col-auto">
                     <img widht="36" height="36"
-                     src={IconCities} alt={`${props.data.cities} Travelers`} />
+                     src={IconCities} alt={`${props.data.city} Travelers`} />
                         <h6 className="mt-3">
-                            {numberFormat(props.data.cities)}{" "} <span className="text-gray-500 font-weight-light">cities</span>
+                            {numberFormat(props.data.city)}{" "} <span className="text-gray-500 font-weight-light">cities</span>
                         </h6>
                 </div>
                 </div>
